@@ -1,0 +1,87 @@
+body {
+	height: 95.5vh;
+	background: #e5f6ed;
+	background-image: url('https://my.fortishealthcare.com/assets/img/webdashboard/headerImg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#title{
+	padding: 20px 0 0;
+	width: fit-content;
+	color: rgb(2, 75, 124);
+}
+.box {
+	width: 100%;
+	position: relative;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.65);
+	color: #ffffff;
+	/*opacity: 0.7;*/
+	box-shadow: 0 40px 40px rgba(0, 0, 0, 0.7);
+	top: 0%;
+	/* right: 10px	; */
+	padding: 3rem 3rem 4rem;
+}
+
+label {
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+input:focus{
+	transform: translateY(-2px) scaleX(1.05);
+	transition: all 0.4s ease;
+}
+#btnSubmit {
+	background-color: #8ed5f7;
+	letter-spacing: 1px;
+}
+#btnSubmit:hover{
+	background-color: #45a3e6;
+	box-shadow: 0 5px 10px rgba(256, 256, 256, 0.7);
+}
+.ng-touched.ng-valid {
+  border-bottom: 3px green solid;
+}
+
+.ng-touched.ng-invalid {
+  border-bottom: 2px red solid;
+}
+span {
+	margin-top: 0;
+	font-size: 14px;
+	color: red;
+}
+
+@media (min-width: 1200px) {
+  .box{
+  	left: 50%;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .box {
+  	left: -32%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .box {
+  	left: -28%;
+  }
+
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+	.box {
+		left: -10%;
+	}
+}
+
+
+@media (max-width: 575px) {
+  .box {
+  	top: 3%;
+  }
+}
+

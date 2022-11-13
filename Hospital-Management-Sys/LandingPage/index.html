@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/phone.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../LandingPage/img/hospital_img-removebg-preview.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Specialities</a></li>
+            <li class="item"><a href="#client-section">Founders</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+            <li class="item"><a href="../UserDashboard/login.html">Patient Login</a></li>
+            <li class="item"><a href="../UserDashboard/register.html">Patient Registration</a></li>
+            <li class="item"><a href="../DoctorDashboard/login.html">Doctor Login</a></li>
+            <li class="item"><a href="../DoctorDashboard/register.html">Doctor Registration</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Apna Hospital</h1>
+        <p>Waiting List for OPD </p>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p> -->
+        <a href="/opd"><button class="btn">Book your Slot</button></a>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Specialities</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://cdn.discordapp.com/attachments/915624337959182387/915627422425169960/heart.png" alt="">
+                <h2 class="h-secondary center">Cardiac sciences</h2>
+                <p class="center">Cardiology is a branch of medicine that deals with the disorders of the heart as well
+                    as some parts of the circulatory system. The field includes medical diagnosis and treatment of
+                    congenital heart defects, coronary artery disease, heart failure, valvular heart disease and
+                    electrophysiology.</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.discordapp.com/attachments/915624337959182387/915639512523223110/brain.jpeg" alt="">
+                <h2 class="h-secondary center">Neurology</h2>
+                <p class="center">Neurology is a branch of medicine dealing with disorders of the nervous system.
+                    Neurology deals with the diagnosis and treatment of all categories of conditions and disease
+                    involving the central and peripheral nervous systems, including their coverings, blood vessels, and
+                    all effector tissue, such as muscle.</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.discordapp.com/attachments/915624337959182387/915627470256996422/bones.png" alt="">
+                <h2 class="h-secondary center">Orthopaedics</h2>
+                <p class="center">Orthopedics is the field of medicine that focuses on surgery on, or manipulation of,
+                    the musculoskeletal system. The surgical specialty was originally focused on developmental
+                    deformities and the effects of polio in children, but today it has expanded significantly to address
+                    all the conditions and diseases affecting the musculoskeletal system in individuals of all ages.</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo2.png" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="img/logo4.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo3.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section> -->
+
+    <section id="services-container">
+        <h1 class="h-primary center">Founders</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://cdn.discordapp.com/attachments/915624337959182387/915625853994537040/temp.jpg" alt="">
+                <h2 class="h-secondary center">Shreyas Chitransh</h2>
+                <p class="center">Registration Number: 20BIT0202<br>B.Tech VIT, Vellore</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.discordapp.com/attachments/879357639698546691/900030050232049744/IMG-20211019-WA0014.jpg" alt="">
+                <h2 class="h-secondary center">Parikshit Juneja</h2>
+                <p class="center">Registration Number: 20BIT0195<br>B.Tech VIT, Vellore</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.discordapp.com/attachments/915624337959182387/915626221839208458/temp.jpg" alt="">
+                <h2 class="h-secondary center">Garv Tandon</h2>
+                <p class="center">Registration Number: 20BIT0130<br>B.Tech VIT, Vellore</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            
+            <form action="/contactus" method="post">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="number" id="phone" placeholder="Enter your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your Query" ></textarea>
+                </div>
+                <button type="submit" style="padding: 6px 20px; border: 2px solid white;
+                background-color: brown;
+                color: white;
+                margin: 17px;
+                font-size: 1.5rem;
+                border-radius: 10px;
+                cursor: pointer;">Contact</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.apnahospital.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
